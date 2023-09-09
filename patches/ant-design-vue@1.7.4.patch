@@ -1,0 +1,153 @@
+diff --git a/CHANGELOG.en-US.md b/CHANGELOG.en-US.md
+deleted file mode 100644
+index a05ede61faf156af23f055866b5482c875cfc231..0000000000000000000000000000000000000000
+diff --git a/CHANGELOG.zh-CN.md b/CHANGELOG.zh-CN.md
+deleted file mode 100644
+index 10e34a13e65796ff393344a8f266d7ba8d3a166d..0000000000000000000000000000000000000000
+diff --git a/es/components.js b/es/components.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..f9902767f6a935504ef6d580396c0a1888dc0071
+--- /dev/null
++++ b/es/components.js
+@@ -0,0 +1,128 @@
++export { default as Affix } from './affix';
++
++export { default as Anchor } from './anchor';
++
++export { default as AutoComplete } from './auto-complete';
++
++export { default as Alert } from './alert';
++
++export { default as Avatar } from './avatar';
++
++export { default as BackTop } from './back-top';
++
++export { default as Badge } from './badge';
++
++export { default as Base } from './base';
++
++export { default as Breadcrumb } from './breadcrumb';
++
++export { default as Button } from './button';
++
++export { default as Calendar } from './calendar';
++
++export { default as Card } from './card';
++
++export { default as Collapse } from './collapse';
++
++export { default as Carousel } from './carousel';
++
++export { default as Cascader } from './cascader';
++
++export { default as Checkbox } from './checkbox';
++
++export { default as Col } from './col';
++
++export { default as DatePicker } from './date-picker';
++
++export { default as Divider } from './divider';
++
++export { default as Dropdown } from './dropdown';
++
++export { default as Form } from './form';
++export { default as FormModel } from './form-model';
++
++export { default as Icon } from './icon';
++
++export { default as Input } from './input';
++
++export { default as InputNumber } from './input-number';
++
++export { default as Layout } from './layout';
++
++export { default as List } from './list';
++
++export { default as LocaleProvider } from './locale-provider';
++
++export { default as message } from './message';
++
++export { default as Menu } from './menu';
++
++export { default as Mentions } from './mentions';
++
++export { default as Modal } from './modal';
++
++export { default as notification } from './notification';
++
++export { default as Pagination } from './pagination';
++
++export { default as Popconfirm } from './popconfirm';
++
++export { default as Popover } from './popover';
++
++export { default as Progress } from './progress';
++
++export { default as Radio } from './radio';
++
++export { default as Rate } from './rate';
++
++export { default as Row } from './row';
++
++export { default as Select } from './select';
++
++export { default as Slider } from './slider';
++
++export { default as Spin } from './spin';
++
++export { default as Statistic } from './statistic';
++
++export { default as Steps } from './steps';
++
++export { default as Switch } from './switch';
++
++export { default as Table } from './table';
++
++export { default as Transfer } from './transfer';
++
++export { default as Tree } from './tree';
++
++export { default as TreeSelect } from './tree-select';
++
++export { default as Tabs } from './tabs';
++
++export { default as Tag } from './tag';
++
++export { default as TimePicker } from './time-picker';
++
++export { default as Timeline } from './timeline';
++
++export { default as Tooltip } from './tooltip';
++
++export { default as Upload } from './upload';
++
++export { default as version } from './version';
++
++export { default as Drawer } from './drawer';
++
++export { default as Skeleton } from './skeleton';
++
++export { default as Comment } from './comment';
++
++export { default as ConfigProvider } from './config-provider';
++
++export { default as Empty } from './empty';
++
++export { default as Result } from './result';
++
++export { default as Descriptions } from './descriptions';
++export { default as PageHeader } from './page-header';
++export { default as Space } from './space';
+diff --git a/package.json b/package.json
+index 0f7130b13123b958e5bcd5d348c5ae2792bf2360..b6f04b4641add20dd5195b6f333c3c955e9423f8 100644
+--- a/package.json
++++ b/package.json
+@@ -16,7 +16,7 @@
+     "frontend"
+   ],
+   "main": "lib/index.js",
+-  "module": "es/index.js",
++  "module": "es/components.js",
+   "typings": "types/index.d.ts",
+   "files": [
+     "dist",
